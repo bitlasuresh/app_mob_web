@@ -361,6 +361,14 @@ module.exports = [
         "runs": true
     },
     {
+        "file": "plugins/cordova-plugin-secure-storage-echo/www/securestorage.js",
+        "id": "cordova-plugin-secure-storage-echo.SecureStorage",
+        "pluginId": "cordova-plugin-secure-storage-echo",
+        "clobbers": [
+            "SecureStorage"
+        ]
+    },
+    {
         "file": "plugins/cordova-plugin-splashscreen/src/browser/SplashScreenProxy.js",
         "id": "cordova-plugin-splashscreen.SplashScreenProxy",
         "pluginId": "cordova-plugin-splashscreen",
@@ -418,14 +426,6 @@ module.exports = [
             "cordova.plugins.Keyboard"
         ],
         "runs": true
-    },
-    {
-        "file": "plugins/cordova-plugin-secure-storage-echo/www/securestorage.js",
-        "id": "cordova-plugin-secure-storage-echo.SecureStorage",
-        "pluginId": "cordova-plugin-secure-storage-echo",
-        "clobbers": [
-            "SecureStorage"
-        ]
     }
 ];
 module.exports.metadata = 
@@ -453,6 +453,7 @@ module.exports.metadata =
     "cordova-plugin-ionic-webview": "5.0.0",
     "cordova-plugin-network-information": "3.0.0",
     "cordova-plugin-request-location-accuracy": "2.3.0",
+    "cordova-plugin-secure-storage-echo": "5.1.1",
     "cordova-plugin-splashscreen": "6.0.1",
     "cordova-plugin-statusbar": "3.0.0",
     "cordova-plugin-transport-security": "0.1.2",
@@ -461,8 +462,7 @@ module.exports.metadata =
     "cordova-plugin-x-socialsharing": "5.6.8",
     "cordova-plugin-x-toast": "2.7.3",
     "cordova.plugins.diagnostic": "5.0.2",
-    "ionic-plugin-keyboard": "2.2.1",
-    "cordova-plugin-secure-storage-echo": "5.1.1"
+    "ionic-plugin-keyboard": "2.2.1"
 }
 // BOTTOM OF METADATA
 });
